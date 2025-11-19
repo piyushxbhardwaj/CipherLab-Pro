@@ -1,145 +1,129 @@
-CipherLab Pro 🔐
-
+# CipherLab Pro 🔐
 A sleek and modern text encryption/decryption studio built for learning cryptography.
 
 CipherLab Pro is a clean, responsive, and feature-rich web application that allows users to encrypt and decrypt text using custom shift-based logic. It is designed with polished UI/UX, theme persistence, smooth animations, and accessibility in mind — making it ideal for students, cybersecurity beginners, or anyone exploring basic cryptography concepts.
 
 ⚠️ Educational Purpose Only — Not secure for real-world encryption.
 
-🚀 Features
-✔ Modern UI
+------------------------------------------------------------
 
-Glassmorphism-inspired design
+## 🚀 Features
 
-Smooth animations & transitions
+✔ Modern UI  
+- Glassmorphism-inspired design  
+- Smooth animations & transitions  
+- Fully responsive (desktop + mobile)
 
-Fully responsive (desktop + mobile)
+✔ Encryption / Decryption  
+- Custom shift-based cipher logic  
+- Preserve case (optional)  
+- Preserve punctuation (optional)
 
-✔ Encryption / Decryption
+✔ Controls  
+- Slider to select shift value  
+- Encrypt/Decrypt mode switching  
+- Clear, Copy, Swap buttons
 
-Custom shift-based cipher logic
+✔ Theme System  
+- Light & Dark modes  
+- Theme saved in localStorage  
+- Smooth transitions
 
-Preserve case (optional)
+✔ UX Improvements  
+- Toast notifications  
+- Click output to auto-select  
+- Keyboard shortcut: Ctrl + Enter  
+- Output updates only when Process is pressed
 
-Preserve punctuation (optional)
+------------------------------------------------------------
 
-✔ Controls
+## 🧩 Tech Stack
 
-Slider to select shift value
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- LocalStorage API
 
-Encrypt/Decrypt mode switching
+------------------------------------------------------------
 
-Clear, Copy, Swap buttons
+## 📁 Project Structure
 
-✔ Theme System
+CipherLab-Pro/  
+│  
+├── index.html  
+├── style.css  
+├── script.js  
+└── README.md  
 
-Light & Dark modes
+------------------------------------------------------------
 
-Theme saved in localStorage
+## 🖥️ Live Demo (GitHub Pages)
 
-Smooth transitions
-
-✔ UX Improvements
-
-Toast notifications
-
-Click output to auto-select
-
-Keyboard shortcut: Ctrl + Enter
-
-Output updates only when Process is pressed
-
-🧩 Tech Stack
-
-HTML5
-
-CSS3
-
-JavaScript (ES6+)
-
-LocalStorage API
-
-📁 Project Structure
-CipherLab-Pro/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
-🖥️ Live Demo (GitHub Pages)
-
-If hosted on GitHub Pages:
-
+If hosted on GitHub Pages:  
 https://your-username.github.io/CipherLab-Pro/
 
-🔧 How to Run Locally
-1️⃣ Clone the repository
-git clone https://github.com/your-username/CipherLab-Pro.git
+------------------------------------------------------------
 
-2️⃣ Navigate to project folder
-cd CipherLab-Pro
+## 🔧 How to Run Locally
 
-3️⃣ Open in a browser
+1️⃣ Clone the repository  
+git clone https://github.com/piyushxbhardwaj/CipherLab-Pro.git  
 
-Simply open:
+2️⃣ Navigate to the project folder  
+cd CipherLab-Pro  
 
-index.html
+3️⃣ Open the project  
+Open index.html directly in browser  
+or start a local server:  
 
-
-Or start a local server:
-
-python -m http.server
-
-
-Then visit:
-
+python -m http.server  
+Then visit:  
 http://localhost:8000
 
-📚 How It Works
+------------------------------------------------------------
+
+## 📚 How It Works
 
 CipherLab Pro uses a shift-based substitution cipher:
 
-“Encrypt” shifts letters forward
-
-“Decrypt” shifts letters backward
-
-Characters wrap around A–Z
-
-Case & punctuation can be preserved
+- “Encrypt” shifts letters forward  
+- “Decrypt” shifts letters backward  
+- Characters wrap around A–Z  
+- Case & punctuation can be preserved  
 
 Example:
 
-Input:  HELLO
-Shift:     3
-Output: KHOOR
+Input:  HELLO  
+Shift:     3  
+Output: KHOOR  
 
-🗂️ Future Improvements
+------------------------------------------------------------
 
-Add other cipher algorithms (Vigenère, ROT13, XOR, etc.)
+## 🗂️ Future Improvements
 
-Add PWA support
+- Add other cipher algorithms (Vigenère, ROT13, XOR, etc.)  
+- Add PWA support  
+- Add export/import text features  
+- Add animated output transitions  
 
-Add export/import text features
+------------------------------------------------------------
 
-Add animated output transitions
+## 🎯 Why This Project is Portfolio-Ready
 
-🎯 Why This Project is Portfolio-Ready
+- Modern interface  
+- Clean code structure  
+- Demonstrates DOM manipulation skills  
+- Includes theme system + persistence  
+- Shows cybersecurity & cryptography interest  
 
-Modern interface
+------------------------------------------------------------
 
-Clean code structure
-
-Demonstrates DOM manipulation skills
-
-Includes theme system + persistence
-
-Shows cybersecurity & cryptography interest
-
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome.
 
-📄 License
+------------------------------------------------------------
+
+## 📄 License
 
 This project is licensed under the MIT License.
