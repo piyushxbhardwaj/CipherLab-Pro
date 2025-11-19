@@ -47,7 +47,7 @@ Click output to auto-select
 
 Keyboard shortcut: Ctrl + Enter
 
-Output only updates when Process is pressed
+Output updates only when Process is pressed
 
 🧩 Tech Stack
 
@@ -110,8 +110,8 @@ Case & punctuation can be preserved
 
 Example:
 
-Input:  HELLO  
-Shift:     3  
+Input:  HELLO
+Shift:     3
 Output: KHOOR
 
 🗂️ Future Improvements
@@ -134,7 +134,7 @@ Demonstrates DOM manipulation skills
 
 Includes theme system + persistence
 
-Shows cybersecurity interest (cryptography basics)
+Shows cybersecurity & cryptography interest
 
 🤝 Contributing
 
