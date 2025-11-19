@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CipherLab Pro — Encrypt / Decrypt Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app" id="appRoot">
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <defs>
+            <linearGradient id="g2" x1="0" x2="1">
+              <stop offset="0" stop-color="#7c3aed"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="6" fill="url(#g2)"></rect>
+          <text x="50%" y="60%" text-anchor="middle" font-size="12" fill="#fff" font-family="monospace">CL</text>
+        </svg>
+        <h1>CipherLab Pro</h1>
+      </div>
+
+      <p class="sidebar-desc">A sleek, educational encryption studio for quick text transforms. <strong>Not for real secrets.</strong></p>
+
+      <div class="controls-list" aria-hidden="false">
+        <strong>Shortcuts</strong>
+        <div class="muted">Ctrl + Enter → Process</div>
+        <div class="muted">Click output to focus and copy</div>
+      </div>
+
+      <div class="theme-switch" role="region" aria-label="Theme toggle">
+        <label class="switch" title="Toggle theme">
+          <input id="themeToggle" type="checkbox" aria-label="Toggle light mode" />
+          <span class="slider" aria-hidden="true"></span>
+        </label>
+        <small id="themeLabel" class="muted">Light Mode</small>
+      </div>
+
+      <footer class="foot">© 2025 CipherLab Pro</footer>
+    </aside>
+
+    <main class="panel" role="main">
+      <header class="head">
+        <h2>CipherLab Pro — Encrypt & Decrypt</h2>
+        <p class="lead">Polished UX — results shown only when you press <strong>Process</strong>.</p>
+      </header>
+
+      <section class="canvas" aria-label="Main canvas">
+        <div class="card" aria-labelledby="inputSectionLabel">
+          <div id="inputSectionLabel" class="sr-only">Input section</div>
+
+          <label for="textInput">Enter Message</label>
+          <textarea id="textInput" rows="6" placeholder="Type text here..."></textarea>
+
+          <div class="row">
+            <div class="field">
+              <label>Shift: <span id="shiftValue">3</span></label>
+              <input id="shiftInput" type="range" min="0" max="25" value="3" aria-label="Shift value" />
+            </div>
+
+            <div class="field small">
+              <label><input id="preserveCase" type="checkbox" checked /> Preserve Case</label>
+              <label><input id="preservePunct" type="checkbox" checked /> Preserve Punctuation</label>
+            </div>
+          </div>
+
+          <div class="row actions">
+            <div class="modes" role="tablist" aria-label="Mode selection">
+              <label class="pill active" role="tab" aria-selected="true"><input type="radio" name="mode" value="encrypt" checked /> Encrypt</label>
+              <label class="pill" role="tab" aria-selected="false"><input type="radio" name="mode" value="decrypt" /> Decrypt</label>
+            </div>
+
+            <div class="btns" role="group" aria-label="Actions">
+              <button id="processBtn" class="primary">Process</button>
+              <button id="clearBtn" class="ghost">Clear</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card output-card" aria-labelledby="outputSectionLabel">
+          <div id="outputSectionLabel" class="sr-only">Output section</div>
+
+          <div class="op-head">
+            <h3>Output</h3>
+            <small class="muted">Click to focus • Copy with button</small>
+          </div>
+
+          <pre id="output" class="output" tabindex="0" aria-live="polite" aria-atomic="true"></pre>
+
+          <div class="op-foot">
+            <span class="muted">Length: <span id="outLen">0</span></span>
+            <span class="muted">Preview: <span id="previewShort">—</span></span>
+          </div>
+
+          <div class="op-actions">
+            <button id="copyBtn" class="icon-btn" aria-label="Copy output">Copy</button>
+            <button id="swapBtn" class="icon-btn" aria-label="Swap input and output">Swap</button>
+          </div>
+        </div>
+      </section>
+
+      <p class="note" aria-hidden="false">⚠️ Educational only — not secure for production use.</p>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
